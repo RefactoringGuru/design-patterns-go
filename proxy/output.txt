@@ -1,0 +1,19 @@
+Url: /app/status
+HttpCode: 200
+Body: Ok
+
+Url: /app/status
+HttpCode: 200
+Body: Ok
+
+Url: /app/status
+HttpCode: 403
+Body: Not Allowed
+
+Url: /app/status
+HttpCode: 201
+Body: User Created
+
+Url: /app/status
+HttpCode: 404
+Body: Not Ok

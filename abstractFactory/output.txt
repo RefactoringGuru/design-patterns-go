@@ -1,0 +1,8 @@
+Logo: nike
+Size: 14
+Logo: nike
+Size: 14
+Logo: adidas
+Size: 14
+Logo: adidas
+Size: 14

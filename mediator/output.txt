@@ -1,0 +1,5 @@
+PassengerTrain: Arrived
+FreightTrain: Arrival blocked, waiting
+PassengerTrain: Leaving
+FreightTrain: Arrival permitted
+FreightTrain: Arrived

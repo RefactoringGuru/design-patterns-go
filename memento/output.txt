@@ -1,0 +1,5 @@
+originator Current State: A
+originator Current State: B
+originator Current State: C
+Restored to State: B
+Restored to State: A

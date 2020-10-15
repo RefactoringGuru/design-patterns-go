@@ -1,0 +1,7 @@
+Normal House Door Type: Wooden Door
+Normal House Window Type: Wooden Window
+Normal House Num Floor: 2
+
+Igloo House Door Type: Snow Door
+Igloo House Window Type: Snow Window
+Igloo House Num Floor: 1

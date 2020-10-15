@@ -1,0 +1,7 @@
+Calculating area for square
+Calculating area for circle
+Calculating area for rectangle
+
+Calculating middle point coordinates for square
+Calculating middle point coordinates for circle
+Calculating middle point coordinates for rectangle

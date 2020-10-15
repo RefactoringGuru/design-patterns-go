@@ -1,0 +1,4 @@
+DressColorType: ctDress
+DressColor: green
+DressColorType: tDress
+DressColor: red

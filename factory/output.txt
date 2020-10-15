@@ -1,0 +1,4 @@
+Gun: AK47 gun
+Power: 4
+Gun: Musket gun
+Power: 1

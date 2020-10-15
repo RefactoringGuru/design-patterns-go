@@ -1,0 +1,9 @@
+SMS: generating random otp 1234
+SMS: saving otp: 1234 to cache
+SMS: sending sms: SMS OTP for login is 1234
+SMS: publishing metrics
+
+EMAIL: generating random otp 1234
+EMAIL: saving otp: 1234 to cache
+EMAIL: sending email: EMAIL OTP for login is 1234
+EMAIL: publishing metrics

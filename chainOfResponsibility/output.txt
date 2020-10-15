@@ -1,0 +1,4 @@
+Reception registering patient
+Doctor checking patient
+Medical giving medicine to patient
+Cashier getting money from patient patient

@@ -1,0 +1,9 @@
+Item requestd
+Money entered is ok
+Dispensing Item
+
+Adding 2 items
+
+Item requestd
+Money entered is ok
+Dispensing Item
