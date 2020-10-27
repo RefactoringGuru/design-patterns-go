@@ -7,9 +7,9 @@ type file struct {
 }
 
 func (f *file) print(indentation string) {
-	fmt.Println(indentation + f.name + "_clone")
+	fmt.Println(indentation + f.name)
 }
 
 func (f *file) clone() inode {
-	return &file{name: f.name}
+	return &file{name: f.name + "_clone"}
 }
