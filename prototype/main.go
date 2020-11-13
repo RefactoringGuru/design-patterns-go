@@ -8,12 +8,12 @@ func main() {
 	file3 := &file{name: "File3"}
 
 	folder1 := &folder{
-		childrens: []inode{file1},
+		children: []inode{file1},
 		name:      "Folder1",
 	}
 
 	folder2 := &folder{
-		childrens: []inode{folder1, file2, file3},
+		children: []inode{folder1, file2, file3},
 		name:      "Folder2",
 	}
 	fmt.Println("\nPrinting hierarchy for Folder2")
