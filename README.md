@@ -10,4 +10,4 @@ The code in this repository is protected by copyright. For all licensing questio
 
 ##  Credits
 
-Sanchit Lohia, https://golangbyexample.com/
+https://golangbyexample.com/
