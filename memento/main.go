@@ -23,10 +23,10 @@ func main() {
 	fmt.Printf("Originator Current State: %s\n", originator.getState())
 	caretaker.addMemento(originator.createMemento())
 
-	originator.restorememento(caretaker.getMenento(1))
+	originator.restoreMemento(caretaker.getMemento(1))
 	fmt.Printf("Restored to State: %s\n", originator.getState())
 
-	originator.restorememento(caretaker.getMenento(0))
+	originator.restoreMemento(caretaker.getMemento(0))
 	fmt.Printf("Restored to State: %s\n", originator.getState())
 
 }

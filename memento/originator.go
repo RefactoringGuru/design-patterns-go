@@ -8,7 +8,7 @@ func (e *originator) createMemento() *memento {
 	return &memento{state: e.state}
 }
 
-func (e *originator) restorememento(m *memento) {
+func (e *originator) restoreMemento(m *memento) {
 	e.state = m.getSavedState()
 }
 
