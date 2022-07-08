@@ -24,7 +24,3 @@ func (s *email) sendNotification(message string) error {
 	fmt.Printf("EMAIL: sending email: %s\n", message)
 	return nil
 }
-
-func (s *email) publishMetric() {
-	fmt.Printf("EMAIL: publishing metrics\n")
-}

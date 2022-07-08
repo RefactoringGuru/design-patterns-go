@@ -5,7 +5,6 @@ type iOtp interface {
 	saveOTPCache(string)
 	getMessage(string) string
 	sendNotification(string) error
-	publishMetric()
 }
 
 // type otp struct {
@@ -19,7 +18,6 @@ type iOtp interface {
 // 	if err != nil {
 // 		return err
 // 	}
-// 	iOtp.publishMetric()
 // 	return nil
 // }
 
@@ -35,6 +33,5 @@ func (o *otp) genAndSendOTP(otpLength int) error {
 	if err != nil {
 		return err
 	}
-	o.iOtp.publishMetric()
 	return nil
 }

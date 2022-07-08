@@ -24,7 +24,3 @@ func (s *sms) sendNotification(message string) error {
 	fmt.Printf("SMS: sending sms: %s\n", message)
 	return nil
 }
-
-func (s *sms) publishMetric() {
-	fmt.Printf("SMS: publishing metrics\n")
-}
