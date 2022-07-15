@@ -4,15 +4,15 @@ import "fmt"
 
 func main() {
 
-	pizza := &veggeMania{}
+	pizza := &VeggeMania{}
 
 	//Add cheese topping
-	pizzaWithCheese := &cheeseTopping{
+	pizzaWithCheese := &CheeseTopping{
 		pizza: pizza,
 	}
 
 	//Add tomato topping
-	pizzaWithCheeseAndTomato := &tomatoTopping{
+	pizzaWithCheeseAndTomato := &TomatoTopping{
 		pizza: pizzaWithCheese,
 	}
 
