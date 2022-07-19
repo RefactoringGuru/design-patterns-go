@@ -1,10 +1,10 @@
 package main
 
-type CheeseTopping struct {
-	pizza IPizza
+type cheeseTopping struct {
+	pizza pizza
 }
 
-func (c *CheeseTopping) getPrice() int {
+func (c *cheeseTopping) getPrice() int {
 	pizzaPrice := c.pizza.getPrice()
 	return pizzaPrice + 10
 }

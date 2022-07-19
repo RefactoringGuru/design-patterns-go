@@ -1,5 +1,5 @@
 package main
 
-type IPizza interface {
+type pizza interface {
 	getPrice() int
 }
