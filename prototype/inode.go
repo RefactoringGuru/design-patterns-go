@@ -1,6 +1,6 @@
 package main
 
-type inode interface {
+type Inode interface {
 	print(string)
-	clone() inode
+	clone() Inode
 }
