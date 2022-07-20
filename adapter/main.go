@@ -5,12 +5,12 @@ func main() {
 	client := &Client{}
 	mac := &Mac{}
 
-	client.insertLightningConnectorIntoComputer(mac)
+	client.InsertLightningConnectorIntoComputer(mac)
 
 	windowsMachine := &Windows{}
 	windowsMachineAdapter := &WindowsAdapter{
 		windowMachine: windowsMachine,
 	}
 
-	client.insertLightningConnectorIntoComputer(windowsMachineAdapter)
+	client.InsertLightningConnectorIntoComputer(windowsMachineAdapter)
 }
