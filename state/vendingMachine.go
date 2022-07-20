@@ -2,33 +2,33 @@ package main
 
 import "fmt"
 
-type vendingMachine struct {
-	hasItem       state
-	itemRequested state
-	hasMoney      state
-	noItem        state
+type VendingMachine struct {
+	hasItem       State
+	itemRequested State
+	hasMoney      State
+	noItem        State
 
-	currentState state
+	currentState State
 
 	itemCount int
 	itemPrice int
 }
 
-func newVendingMachine(itemCount, itemPrice int) *vendingMachine {
-	v := &vendingMachine{
+func newVendingMachine(itemCount, itemPrice int) *VendingMachine {
+	v := &VendingMachine{
 		itemCount: itemCount,
 		itemPrice: itemPrice,
 	}
-	hasItemState := &hasItemState{
+	hasItemState := &HasItemState{
 		vendingMachine: v,
 	}
-	itemRequestedState := &itemRequestedState{
+	itemRequestedState := &ItemRequestedState{
 		vendingMachine: v,
 	}
-	hasMoneyState := &hasMoneyState{
+	hasMoneyState := &HasMoneyState{
 		vendingMachine: v,
 	}
-	noItemState := &noItemState{
+	noItemState := &NoItemState{
 		vendingMachine: v,
 	}
 
@@ -40,27 +40,27 @@ func newVendingMachine(itemCount, itemPrice int) *vendingMachine {
 	return v
 }
 
-func (v *vendingMachine) requestItem() error {
+func (v *VendingMachine) requestItem() error {
 	return v.currentState.requestItem()
 }
 
-func (v *vendingMachine) addItem(count int) error {
+func (v *VendingMachine) addItem(count int) error {
 	return v.currentState.addItem(count)
 }
 
-func (v *vendingMachine) insertMoney(money int) error {
+func (v *VendingMachine) insertMoney(money int) error {
 	return v.currentState.insertMoney(money)
 }
 
-func (v *vendingMachine) dispenseItem() error {
+func (v *VendingMachine) dispenseItem() error {
 	return v.currentState.dispenseItem()
 }
 
-func (v *vendingMachine) setState(s state) {
+func (v *VendingMachine) setState(s State) {
 	v.currentState = s
 }
 
-func (v *vendingMachine) incrementItemCount(count int) {
+func (v *VendingMachine) incrementItemCount(count int) {
 	fmt.Printf("Adding %d items\n", count)
 	v.itemCount = v.itemCount + count
 }

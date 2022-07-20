@@ -2,19 +2,19 @@ package main
 
 import "fmt"
 
-type itemRequestedState struct {
-	vendingMachine *vendingMachine
+type ItemRequestedState struct {
+	vendingMachine *VendingMachine
 }
 
-func (i *itemRequestedState) requestItem() error {
+func (i *ItemRequestedState) requestItem() error {
 	return fmt.Errorf("Item already requested")
 }
 
-func (i *itemRequestedState) addItem(count int) error {
+func (i *ItemRequestedState) addItem(count int) error {
 	return fmt.Errorf("Item Dispense in progress")
 }
 
-func (i *itemRequestedState) insertMoney(money int) error {
+func (i *ItemRequestedState) insertMoney(money int) error {
 	if money < i.vendingMachine.itemPrice {
 		fmt.Errorf("Inserted money is less. Please insert %d", i.vendingMachine.itemPrice)
 	}
@@ -22,6 +22,6 @@ func (i *itemRequestedState) insertMoney(money int) error {
 	i.vendingMachine.setState(i.vendingMachine.hasMoney)
 	return nil
 }
-func (i *itemRequestedState) dispenseItem() error {
+func (i *ItemRequestedState) dispenseItem() error {
 	return fmt.Errorf("Please insert money first")
 }
