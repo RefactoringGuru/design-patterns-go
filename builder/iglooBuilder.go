@@ -1,29 +1,29 @@
 package main
 
-type iglooBuilder struct {
+type IglooBuilder struct {
 	windowType string
 	doorType   string
 	floor      int
 }
 
-func newIglooBuilder() *iglooBuilder {
-	return &iglooBuilder{}
+func newIglooBuilder() *IglooBuilder {
+	return &IglooBuilder{}
 }
 
-func (b *iglooBuilder) setWindowType() {
+func (b *IglooBuilder) setWindowType() {
 	b.windowType = "Snow Window"
 }
 
-func (b *iglooBuilder) setDoorType() {
+func (b *IglooBuilder) setDoorType() {
 	b.doorType = "Snow Door"
 }
 
-func (b *iglooBuilder) setNumFloor() {
+func (b *IglooBuilder) setNumFloor() {
 	b.floor = 1
 }
 
-func (b *iglooBuilder) getHouse() house {
-	return house{
+func (b *IglooBuilder) getHouse() House {
+	return House{
 		doorType:   b.doorType,
 		windowType: b.windowType,
 		floor:      b.floor,

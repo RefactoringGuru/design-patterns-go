@@ -1,13 +1,13 @@
 package main
 
-type iBuilder interface {
+type IBuilder interface {
 	setWindowType()
 	setDoorType()
 	setNumFloor()
-	getHouse() house
+	getHouse() House
 }
 
-func getBuilder(builderType string) iBuilder {
+func getBuilder(builderType string) IBuilder {
 	if builderType == "normal" {
 		return newNormalBuilder()
 	}
