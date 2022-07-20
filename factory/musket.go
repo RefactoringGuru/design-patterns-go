@@ -1,12 +1,12 @@
 package main
 
 type musket struct {
-	gun
+	Gun
 }
 
-func newMusket() iGun {
+func newMusket() IGun {
 	return &musket{
-		gun: gun{
+		Gun: Gun{
 			name:  "Musket gun",
 			power: 1,
 		},
