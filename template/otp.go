@@ -1,6 +1,6 @@
 package main
 
-type iOtp interface {
+type IOtp interface {
 	genRandomOTP(int) string
 	saveOTPCache(string)
 	getMessage(string) string
@@ -21,11 +21,11 @@ type iOtp interface {
 // 	return nil
 // }
 
-type otp struct {
-	iOtp iOtp
+type Otp struct {
+	iOtp IOtp
 }
 
-func (o *otp) genAndSendOTP(otpLength int) error {
+func (o *Otp) genAndSendOTP(otpLength int) error {
 	otp := o.iOtp.genRandomOTP(otpLength)
 	o.iOtp.saveOTPCache(otp)
 	message := o.iOtp.getMessage(otp)

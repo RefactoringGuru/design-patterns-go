@@ -16,15 +16,15 @@ func main() {
 	// }
 	// emailOTP.genAndSendOTP(emailOTP, 4)
 	// fmt.Scanln()
-	smsOTP := &sms{}
-	o := otp{
+	smsOTP := &Sms{}
+	o := Otp{
 		iOtp: smsOTP,
 	}
 	o.genAndSendOTP(4)
 
 	fmt.Println("")
-	emailOTP := &email{}
-	o = otp{
+	emailOTP := &Email{}
+	o = Otp{
 		iOtp: emailOTP,
 	}
 	o.genAndSendOTP(4)
