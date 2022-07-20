@@ -1,14 +1,14 @@
 package main
 
 type game struct {
-	terrorists        []*player
-	counterTerrorists []*player
+	terrorists        []*Player
+	counterTerrorists []*Player
 }
 
 func newGame() *game {
 	return &game{
-		terrorists:        make([]*player, 1),
-		counterTerrorists: make([]*player, 1),
+		terrorists:        make([]*Player, 1),
+		counterTerrorists: make([]*Player, 1),
 	}
 }
 

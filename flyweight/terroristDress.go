@@ -1,13 +1,13 @@
 package main
 
-type terroristDress struct {
+type TerroristDress struct {
 	color string
 }
 
-func (t *terroristDress) getColor() string {
+func (t *TerroristDress) getColor() string {
 	return t.color
 }
 
-func newTerroristDress() *terroristDress {
-	return &terroristDress{color: "red"}
+func newTerroristDress() *TerroristDress {
+	return &TerroristDress{color: "red"}
 }
