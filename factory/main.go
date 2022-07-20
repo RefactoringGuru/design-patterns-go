@@ -10,7 +10,7 @@ func main() {
 	printDetails(musket)
 }
 
-func printDetails(g iGun) {
+func printDetails(g IGun) {
 	fmt.Printf("Gun: %s", g.getName())
 	fmt.Println()
 	fmt.Printf("Power: %d", g.getPower())

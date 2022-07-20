@@ -4,11 +4,11 @@ import "fmt"
 
 func main() {
 
-	caretaker := &caretaker{
-		mementoArray: make([]*memento, 0),
+	caretaker := &Caretaker{
+		mementoArray: make([]*Memento, 0),
 	}
 
-	originator := &originator{
+	originator := &Originator{
 		state: "A",
 	}
 

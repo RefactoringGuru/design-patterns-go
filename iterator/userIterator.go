@@ -1,18 +1,18 @@
 package main
 
-type userIterator struct {
+type UserIterator struct {
 	index int
-	users []*user
+	users []*User
 }
 
-func (u *userIterator) hasNext() bool {
+func (u *UserIterator) hasNext() bool {
 	if u.index < len(u.users) {
 		return true
 	}
 	return false
 
 }
-func (u *userIterator) getNext() *user {
+func (u *UserIterator) getNext() *User {
 	if u.hasNext() {
 		user := u.users[u.index]
 		u.index++

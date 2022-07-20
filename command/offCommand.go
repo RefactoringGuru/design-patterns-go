@@ -1,9 +1,9 @@
 package main
 
-type offCommand struct {
-	device device
+type OffCommand struct {
+	device Device
 }
 
-func (c *offCommand) execute() {
+func (c *OffCommand) execute() {
 	c.device.off()
 }

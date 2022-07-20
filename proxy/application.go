@@ -1,9 +1,9 @@
 package main
 
-type application struct {
+type Application struct {
 }
 
-func (a *application) handleRequest(url, method string) (int, string) {
+func (a *Application) handleRequest(url, method string) (int, string) {
 	if url == "/app/status" && method == "GET" {
 		return 200, "Ok"
 	}

@@ -1,7 +1,7 @@
 package main
 
 func main() {
-	lfu := &lfu{}
+	lfu := &Lfu{}
 	cache := initCache(lfu)
 
 	cache.add("a", "1")
@@ -9,12 +9,12 @@ func main() {
 
 	cache.add("c", "3")
 
-	lru := &lru{}
+	lru := &Lru{}
 	cache.setEvictionAlgo(lru)
 
 	cache.add("d", "4")
 
-	fifo := &fifo{}
+	fifo := &Fifo{}
 	cache.setEvictionAlgo(fifo)
 
 	cache.add("e", "5")

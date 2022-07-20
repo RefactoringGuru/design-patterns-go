@@ -1,8 +1,8 @@
 package main
 
-type veggeMania struct {
+type VeggeMania struct {
 }
 
-func (p *veggeMania) getPrice() int {
+func (p *VeggeMania) getPrice() int {
 	return 15
 }

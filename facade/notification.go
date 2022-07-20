@@ -2,13 +2,13 @@ package main
 
 import "fmt"
 
-type notification struct {
+type Notification struct {
 }
 
-func (n *notification) sendWalletCreditNotification() {
+func (n *Notification) sendWalletCreditNotification() {
 	fmt.Println("Sending wallet credit notification")
 }
 
-func (n *notification) sendWalletDebitNotification() {
+func (n *Notification) sendWalletDebitNotification() {
 	fmt.Println("Sending wallet debit notification")
 }

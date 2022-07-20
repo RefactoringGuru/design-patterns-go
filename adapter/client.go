@@ -2,10 +2,10 @@ package main
 
 import "fmt"
 
-type client struct {
+type Client struct {
 }
 
-func (c *client) insertLightningConnectorIntoComputer(com computer) {
-    fmt.Println("Client inserts Lightning connector into computer.")
-	com.insertIntoLightningPort()
+func (c *Client) InsertLightningConnectorIntoComputer(com Computer) {
+	fmt.Println("Client inserts Lightning connector into computer.")
+	com.InsertIntoLightningPort()
 }

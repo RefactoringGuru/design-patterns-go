@@ -3,10 +3,10 @@ package main
 func main() {
 	stationManager := newStationManger()
 
-	passengerTrain := &passengerTrain{
+	passengerTrain := &PassengerTrain{
 		mediator: stationManager,
 	}
-	freightTrain := &freightTrain{
+	freightTrain := &FreightTrain{
 		mediator: stationManager,
 	}
 

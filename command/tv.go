@@ -2,16 +2,16 @@ package main
 
 import "fmt"
 
-type tv struct {
+type Tv struct {
 	isRunning bool
 }
 
-func (t *tv) on() {
+func (t *Tv) on() {
 	t.isRunning = true
 	fmt.Println("Turning tv on")
 }
 
-func (t *tv) off() {
+func (t *Tv) off() {
 	t.isRunning = false
 	fmt.Println("Turning tv off")
 }

@@ -1,12 +1,12 @@
 package main
 
-type ak47 struct {
-	gun
+type Ak47 struct {
+	Gun
 }
 
-func newAk47() iGun {
-	return &ak47{
-		gun: gun{
+func newAk47() IGun {
+	return &Ak47{
+		Gun: Gun{
 			name:  "AK47 gun",
 			power: 4,
 		},

@@ -1,17 +1,17 @@
 package main
 
-type stationManager struct {
+type StationManager struct {
 	isPlatformFree bool
-	trainQueue     []train
+	trainQueue     []Train
 }
 
-func newStationManger() *stationManager {
-	return &stationManager{
+func newStationManger() *StationManager {
+	return &StationManager{
 		isPlatformFree: true,
 	}
 }
 
-func (s *stationManager) canArrive(t train) bool {
+func (s *StationManager) canArrive(t Train) bool {
 	if s.isPlatformFree {
 		s.isPlatformFree = false
 		return true
@@ -20,7 +20,7 @@ func (s *stationManager) canArrive(t train) bool {
 	return false
 }
 
-func (s *stationManager) notifyAboutDeparture() {
+func (s *StationManager) notifyAboutDeparture() {
 	if !s.isPlatformFree {
 		s.isPlatformFree = true
 	}

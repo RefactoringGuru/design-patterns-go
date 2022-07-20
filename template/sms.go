@@ -2,25 +2,25 @@ package main
 
 import "fmt"
 
-type sms struct {
-	otp
+type Sms struct {
+	Otp
 }
 
-func (s *sms) genRandomOTP(len int) string {
+func (s *Sms) genRandomOTP(len int) string {
 	randomOTP := "1234"
 	fmt.Printf("SMS: generating random otp %s\n", randomOTP)
 	return randomOTP
 }
 
-func (s *sms) saveOTPCache(otp string) {
+func (s *Sms) saveOTPCache(otp string) {
 	fmt.Printf("SMS: saving otp: %s to cache\n", otp)
 }
 
-func (s *sms) getMessage(otp string) string {
+func (s *Sms) getMessage(otp string) string {
 	return "SMS OTP for login is " + otp
 }
 
-func (s *sms) sendNotification(message string) error {
+func (s *Sms) sendNotification(message string) error {
 	fmt.Printf("SMS: sending sms: %s\n", message)
 	return nil
 }

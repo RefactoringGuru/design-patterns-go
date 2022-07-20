@@ -1,5 +1,5 @@
 package main
 
-type printer interface {
-	printFile()
+type Printer interface {
+	PrintFile()
 }

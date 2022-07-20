@@ -1,5 +1,5 @@
 package main
 
-type evictionAlgo interface {
-	evict(c *cache)
+type EvictionAlgo interface {
+	evict(c *Cache)
 }

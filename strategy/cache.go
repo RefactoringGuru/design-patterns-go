@@ -1,15 +1,15 @@
 package main
 
-type cache struct {
+type Cache struct {
 	storage      map[string]string
-	evictionAlgo evictionAlgo
+	evictionAlgo EvictionAlgo
 	capacity     int
 	maxCapacity  int
 }
 
-func initCache(e evictionAlgo) *cache {
+func initCache(e EvictionAlgo) *Cache {
 	storage := make(map[string]string)
-	return &cache{
+	return &Cache{
 		storage:      storage,
 		evictionAlgo: e,
 		capacity:     0,
@@ -17,11 +17,11 @@ func initCache(e evictionAlgo) *cache {
 	}
 }
 
-func (c *cache) setEvictionAlgo(e evictionAlgo) {
+func (c *Cache) setEvictionAlgo(e EvictionAlgo) {
 	c.evictionAlgo = e
 }
 
-func (c *cache) add(key, value string) {
+func (c *Cache) add(key, value string) {
 	if c.capacity == c.maxCapacity {
 		c.evict()
 	}
@@ -29,11 +29,11 @@ func (c *cache) add(key, value string) {
 	c.storage[key] = value
 }
 
-func (c *cache) get(key string) {
+func (c *Cache) get(key string) {
 	delete(c.storage, key)
 }
 
-func (c *cache) evict() {
+func (c *Cache) evict() {
 	c.evictionAlgo.evict(c)
 	c.capacity--
 }

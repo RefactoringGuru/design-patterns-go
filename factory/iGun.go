@@ -1,6 +1,6 @@
 package main
 
-type iGun interface {
+type IGun interface {
 	setName(name string)
 	setPower(power int)
 	getName() string

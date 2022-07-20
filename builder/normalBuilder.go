@@ -1,29 +1,29 @@
 package main
 
-type normalBuilder struct {
+type NormalBuilder struct {
 	windowType string
 	doorType   string
 	floor      int
 }
 
-func newNormalBuilder() *normalBuilder {
-	return &normalBuilder{}
+func newNormalBuilder() *NormalBuilder {
+	return &NormalBuilder{}
 }
 
-func (b *normalBuilder) setWindowType() {
+func (b *NormalBuilder) setWindowType() {
 	b.windowType = "Wooden Window"
 }
 
-func (b *normalBuilder) setDoorType() {
+func (b *NormalBuilder) setDoorType() {
 	b.doorType = "Wooden Door"
 }
 
-func (b *normalBuilder) setNumFloor() {
+func (b *NormalBuilder) setNumFloor() {
 	b.floor = 2
 }
 
-func (b *normalBuilder) getHouse() house {
-	return house{
+func (b *NormalBuilder) getHouse() House {
+	return House{
 		doorType:   b.doorType,
 		windowType: b.windowType,
 		floor:      b.floor,

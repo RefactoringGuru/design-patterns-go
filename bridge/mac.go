@@ -2,15 +2,15 @@ package main
 
 import "fmt"
 
-type mac struct {
-	printer printer
+type Mac struct {
+	printer Printer
 }
 
-func (m *mac) print() {
+func (m *Mac) Print() {
 	fmt.Println("Print request for mac")
-	m.printer.printFile()
+	m.printer.PrintFile()
 }
 
-func (m *mac) setPrinter(p printer) {
+func (m *Mac) SetPrinter(p Printer) {
 	m.printer = p
 }

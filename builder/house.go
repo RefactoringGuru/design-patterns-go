@@ -1,6 +1,6 @@
 package main
 
-type house struct {
+type House struct {
 	windowType string
 	doorType   string
 	floor      int

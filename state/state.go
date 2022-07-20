@@ -1,6 +1,6 @@
 package main
 
-type state interface {
+type State interface {
 	addItem(int) error
 	requestItem() error
 	insertMoney(money int) error

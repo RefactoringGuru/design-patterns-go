@@ -1,6 +1,6 @@
 package main
 
-type patient struct {
+type Patient struct {
 	name              string
 	registrationDone  bool
 	doctorCheckUpDone bool

@@ -1,22 +1,22 @@
 package main
 
-type gun struct {
+type Gun struct {
 	name  string
 	power int
 }
 
-func (g *gun) setName(name string) {
+func (g *Gun) setName(name string) {
 	g.name = name
 }
 
-func (g *gun) getName() string {
+func (g *Gun) getName() string {
 	return g.name
 }
 
-func (g *gun) setPower(power int) {
+func (g *Gun) setPower(power int) {
 	g.power = power
 }
 
-func (g *gun) getPower() int {
+func (g *Gun) getPower() int {
 	return g.power
 }

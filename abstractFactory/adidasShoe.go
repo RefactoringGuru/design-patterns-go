@@ -1,5 +1,5 @@
 package main
 
-type adidasShoe struct {
-	shoe
+type AdidasShoe struct {
+	Shoe
 }

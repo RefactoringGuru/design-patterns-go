@@ -4,26 +4,26 @@ import "fmt"
 
 func main() {
 
-	hpPrinter := &hp{}
-	epsonPrinter := &epson{}
+	hpPrinter := &Hp{}
+	epsonPrinter := &Epson{}
 
-	macComputer := &mac{}
+	macComputer := &Mac{}
 
-	macComputer.setPrinter(hpPrinter)
-	macComputer.print()
+	macComputer.SetPrinter(hpPrinter)
+	macComputer.Print()
 	fmt.Println()
 
-	macComputer.setPrinter(epsonPrinter)
-	macComputer.print()
+	macComputer.SetPrinter(epsonPrinter)
+	macComputer.Print()
 	fmt.Println()
 
-	winComputer := &windows{}
+	winComputer := &Windows{}
 
-	winComputer.setPrinter(hpPrinter)
-	winComputer.print()
+	winComputer.SetPrinter(hpPrinter)
+	winComputer.Print()
 	fmt.Println()
 
-	winComputer.setPrinter(epsonPrinter)
-	winComputer.print()
+	winComputer.SetPrinter(epsonPrinter)
+	winComputer.Print()
 	fmt.Println()
 }

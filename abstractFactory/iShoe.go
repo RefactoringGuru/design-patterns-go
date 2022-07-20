@@ -1,29 +1,29 @@
 package main
 
-type iShoe interface {
+type IShoe interface {
 	setLogo(logo string)
 	setSize(size int)
 	getLogo() string
 	getSize() int
 }
 
-type shoe struct {
+type Shoe struct {
 	logo string
 	size int
 }
 
-func (s *shoe) setLogo(logo string) {
+func (s *Shoe) setLogo(logo string) {
 	s.logo = logo
 }
 
-func (s *shoe) getLogo() string {
+func (s *Shoe) getLogo() string {
 	return s.logo
 }
 
-func (s *shoe) setSize(size int) {
+func (s *Shoe) setSize(size int) {
 	s.size = size
 }
 
-func (s *shoe) getSize() int {
+func (s *Shoe) getSize() int {
 	return s.size
 }

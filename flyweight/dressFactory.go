@@ -10,16 +10,16 @@ const (
 )
 
 var (
-	dressFactorySingleInstance = &dressFactory{
-		dressMap: make(map[string]dress),
+	dressFactorySingleInstance = &DressFactory{
+		dressMap: make(map[string]Dress),
 	}
 )
 
-type dressFactory struct {
-	dressMap map[string]dress
+type DressFactory struct {
+	dressMap map[string]Dress
 }
 
-func (d *dressFactory) getDressByType(dressType string) (dress, error) {
+func (d *DressFactory) getDressByType(dressType string) (Dress, error) {
 	if d.dressMap[dressType] != nil {
 		return d.dressMap[dressType], nil
 	}
@@ -36,6 +36,6 @@ func (d *dressFactory) getDressByType(dressType string) (dress, error) {
 	return nil, fmt.Errorf("Wrong dress type passed")
 }
 
-func getDressFactorySingleInstance() *dressFactory {
+func getDressFactorySingleInstance() *DressFactory {
 	return dressFactorySingleInstance
 }

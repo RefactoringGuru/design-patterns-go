@@ -1,9 +1,9 @@
 package main
 
-type onCommand struct {
-	device device
+type OnCommand struct {
+	device Device
 }
 
-func (c *onCommand) execute() {
+func (c *OnCommand) execute() {
 	c.device.on()
 }

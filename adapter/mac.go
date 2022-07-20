@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-type mac struct {
+type Mac struct {
 }
 
-func (m *mac) insertIntoLightningPort() {
+func (m *Mac) InsertIntoLightningPort() {
 	fmt.Println("Lightning connector is plugged into mac machine.")
 }

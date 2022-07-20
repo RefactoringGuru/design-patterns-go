@@ -1,6 +1,6 @@
 package main
 
-type computer interface {
-	print()
-	setPrinter(printer)
+type Computer interface {
+	Print()
+	SetPrinter(Printer)
 }

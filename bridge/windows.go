@@ -2,15 +2,15 @@ package main
 
 import "fmt"
 
-type windows struct {
-	printer printer
+type Windows struct {
+	printer Printer
 }
 
-func (w *windows) print() {
+func (w *Windows) Print() {
 	fmt.Println("Print request for windows")
-	w.printer.printFile()
+	w.printer.PrintFile()
 }
 
-func (w *windows) setPrinter(p printer) {
+func (w *Windows) SetPrinter(p Printer) {
 	w.printer = p
 }

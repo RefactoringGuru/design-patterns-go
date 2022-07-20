@@ -1,20 +1,20 @@
 package main
 
-type nike struct {
+type Nike struct {
 }
 
-func (n *nike) makeShoe() iShoe {
-	return &nikeShoe{
-		shoe: shoe{
+func (n *Nike) makeShoe() IShoe {
+	return &NikeShoe{
+		Shoe: Shoe{
 			logo: "nike",
 			size: 14,
 		},
 	}
 }
 
-func (n *nike) makeShirt() iShirt {
-	return &nikeShirt{
-		shirt: shirt{
+func (n *Nike) makeShirt() IShirt {
+	return &NikeShirt{
+		Shirt: Shirt{
 			logo: "nike",
 			size: 14,
 		},

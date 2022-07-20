@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-type fifo struct {
+type Fifo struct {
 }
 
-func (l *fifo) evict(c *cache) {
+func (l *Fifo) evict(c *Cache) {
 	fmt.Println("Evicting by fifo strtegy")
 }

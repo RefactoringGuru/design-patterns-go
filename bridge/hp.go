@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-type hp struct {
+type Hp struct {
 }
 
-func (p *hp) printFile() {
+func (p *Hp) PrintFile() {
 	fmt.Println("Printing by a HP Printer")
 }

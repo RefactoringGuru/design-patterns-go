@@ -2,22 +2,22 @@ package main
 
 import "fmt"
 
-type hasMoneyState struct {
-	vendingMachine *vendingMachine
+type HasMoneyState struct {
+	vendingMachine *VendingMachine
 }
 
-func (i *hasMoneyState) requestItem() error {
+func (i *HasMoneyState) requestItem() error {
 	return fmt.Errorf("Item dispense in progress")
 }
 
-func (i *hasMoneyState) addItem(count int) error {
+func (i *HasMoneyState) addItem(count int) error {
 	return fmt.Errorf("Item dispense in progress")
 }
 
-func (i *hasMoneyState) insertMoney(money int) error {
+func (i *HasMoneyState) insertMoney(money int) error {
 	return fmt.Errorf("Item out of stock")
 }
-func (i *hasMoneyState) dispenseItem() error {
+func (i *HasMoneyState) dispenseItem() error {
 	fmt.Println("Dispensing Item")
 	i.vendingMachine.itemCount = i.vendingMachine.itemCount - 1
 	if i.vendingMachine.itemCount == 0 {

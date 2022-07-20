@@ -2,14 +2,14 @@ package main
 
 import "fmt"
 
-type file struct {
+type File struct {
 	name string
 }
 
-func (f *file) print(indentation string) {
+func (f *File) print(indentation string) {
 	fmt.Println(indentation + f.name)
 }
 
-func (f *file) clone() inode {
-	return &file{name: f.name + "_clone"}
+func (f *File) clone() Inode {
+	return &File{name: f.name + "_clone"}
 }

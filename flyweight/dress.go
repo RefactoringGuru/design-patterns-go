@@ -1,5 +1,5 @@
 package main
 
-type dress interface {
+type Dress interface {
 	getColor() string
 }

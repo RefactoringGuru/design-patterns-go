@@ -2,15 +2,15 @@ package main
 
 func main() {
 
-	client := &client{}
-	mac := &mac{}
+	client := &Client{}
+	mac := &Mac{}
 
-	client.insertLightningConnectorIntoComputer(mac)
+	client.InsertLightningConnectorIntoComputer(mac)
 
-	windowsMachine := &windows{}
-	windowsMachineAdapter := &windowsAdapter{
+	windowsMachine := &Windows{}
+	windowsMachineAdapter := &WindowsAdapter{
 		windowMachine: windowsMachine,
 	}
 
-	client.insertLightningConnectorIntoComputer(windowsMachineAdapter)
+	client.InsertLightningConnectorIntoComputer(windowsMachineAdapter)
 }

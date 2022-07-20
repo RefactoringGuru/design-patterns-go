@@ -1,6 +1,6 @@
 package main
 
-type shape interface {
+type Shape interface {
 	getType() string
-	accept(visitor)
+	accept(Visitor)
 }
