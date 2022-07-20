@@ -1,13 +1,13 @@
 package main
 
-type circle struct {
+type Circle struct {
 	radius int
 }
 
-func (c *circle) accept(v visitor) {
+func (c *Circle) accept(v Visitor) {
 	v.visitForCircle(c)
 }
 
-func (c *circle) getType() string {
+func (c *Circle) getType() string {
 	return "Circle"
 }

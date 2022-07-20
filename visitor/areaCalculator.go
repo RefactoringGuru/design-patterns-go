@@ -4,19 +4,19 @@ import (
 	"fmt"
 )
 
-type areaCalculator struct {
+type AreaCalculator struct {
 	area int
 }
 
-func (a *areaCalculator) visitForSquare(s *square) {
+func (a *AreaCalculator) visitForSquare(s *Square) {
 	// Calculate area for square.
 	// Then assign in to the area instance variable.
 	fmt.Println("Calculating area for square")
 }
 
-func (a *areaCalculator) visitForCircle(s *circle) {
+func (a *AreaCalculator) visitForCircle(s *Circle) {
 	fmt.Println("Calculating area for circle")
 }
-func (a *areaCalculator) visitForrectangle(s *rectangle) {
+func (a *AreaCalculator) visitForrectangle(s *Rectangle) {
 	fmt.Println("Calculating area for rectangle")
 }

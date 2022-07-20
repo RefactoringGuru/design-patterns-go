@@ -1,14 +1,14 @@
 package main
 
-type rectangle struct {
+type Rectangle struct {
 	l int
 	b int
 }
 
-func (t *rectangle) accept(v visitor) {
+func (t *Rectangle) accept(v Visitor) {
 	v.visitForrectangle(t)
 }
 
-func (t *rectangle) getType() string {
+func (t *Rectangle) getType() string {
 	return "rectangle"
 }

@@ -1,13 +1,13 @@
 package main
 
-type square struct {
+type Square struct {
 	side int
 }
 
-func (s *square) accept(v visitor) {
+func (s *Square) accept(v Visitor) {
 	v.visitForSquare(s)
 }
 
-func (s *square) getType() string {
+func (s *Square) getType() string {
 	return "Square"
 }
