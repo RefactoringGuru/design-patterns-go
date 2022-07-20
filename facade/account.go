@@ -2,17 +2,17 @@ package main
 
 import "fmt"
 
-type account struct {
+type Account struct {
 	name string
 }
 
-func newAccount(accountName string) *account {
-	return &account{
+func newAccount(accountName string) *Account {
+	return &Account{
 		name: accountName,
 	}
 }
 
-func (a *account) checkAccount(accountName string) error {
+func (a *Account) checkAccount(accountName string) error {
 	if a.name != accountName {
 		return fmt.Errorf("Account Name is incorrect")
 	}

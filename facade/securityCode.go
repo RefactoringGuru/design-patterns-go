@@ -2,17 +2,17 @@ package main
 
 import "fmt"
 
-type securityCode struct {
+type SecurityCode struct {
 	code int
 }
 
-func newSecurityCode(code int) *securityCode {
-	return &securityCode{
+func newSecurityCode(code int) *SecurityCode {
+	return &SecurityCode{
 		code: code,
 	}
 }
 
-func (s *securityCode) checkCode(incomingCode int) error {
+func (s *SecurityCode) checkCode(incomingCode int) error {
 	if s.code != incomingCode {
 		return fmt.Errorf("Security Code is incorrect")
 	}
