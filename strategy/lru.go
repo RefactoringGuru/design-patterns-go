@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-type lru struct {
+type Lru struct {
 }
 
-func (l *lru) evict(c *cache) {
+func (l *Lru) evict(c *Cache) {
 	fmt.Println("Evicting by lru strtegy")
 }
