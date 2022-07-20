@@ -1,6 +1,6 @@
 package main
 
-type department interface {
-	execute(*patient)
-	setNext(department)
+type Department interface {
+	execute(*Patient)
+	setNext(Department)
 }

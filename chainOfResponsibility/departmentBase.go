@@ -1,5 +1,5 @@
 package main
 
-type departmentBase struct {
-	nextDepartment department
+type DepartmentBase struct {
+	nextDepartment Department
 }

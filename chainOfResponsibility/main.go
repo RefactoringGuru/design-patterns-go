@@ -2,21 +2,21 @@ package main
 
 func main() {
 
-	cashier := &cashier{}
+	cashier := &Cashier{}
 
 	//Set next for medical department
-	medical := &medical{}
+	medical := &Medical{}
 	medical.setNext(cashier)
 
 	//Set next for doctor department
-	doctor := &doctor{}
+	doctor := &Doctor{}
 	doctor.setNext(medical)
 
 	//Set next for reception department
-	reception := &reception{}
+	reception := &Reception{}
 	reception.setNext(doctor)
 
-	patient := &patient{name: "abc"}
+	patient := &Patient{name: "abc"}
 	//Patient visiting
 	reception.execute(patient)
 }

@@ -2,11 +2,11 @@ package main
 
 import "fmt"
 
-type reception struct {
-	next department
+type Reception struct {
+	next Department
 }
 
-func (r *reception) execute(p *patient) {
+func (r *Reception) execute(p *Patient) {
 	if p.registrationDone {
 		fmt.Println("Patient registration already done")
 		r.next.execute(p)
@@ -17,6 +17,6 @@ func (r *reception) execute(p *patient) {
 	r.next.execute(p)
 }
 
-func (r *reception) setNext(next department) {
+func (r *Reception) setNext(next Department) {
 	r.next = next
 }
