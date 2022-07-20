@@ -1,13 +1,13 @@
 package main
 
-type caretaker struct {
-	mementoArray []*memento
+type Caretaker struct {
+	mementoArray []*Memento
 }
 
-func (c *caretaker) addMemento(m *memento) {
+func (c *Caretaker) addMemento(m *Memento) {
 	c.mementoArray = append(c.mementoArray, m)
 }
 
-func (c *caretaker) getMemento(index int) *memento {
+func (c *Caretaker) getMemento(index int) *Memento {
 	return c.mementoArray[index]
 }

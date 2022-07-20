@@ -1,21 +1,21 @@
 package main
 
-type originator struct {
+type Originator struct {
 	state string
 }
 
-func (e *originator) createMemento() *memento {
-	return &memento{state: e.state}
+func (e *Originator) createMemento() *Memento {
+	return &Memento{state: e.state}
 }
 
-func (e *originator) restoreMemento(m *memento) {
+func (e *Originator) restoreMemento(m *Memento) {
 	e.state = m.getSavedState()
 }
 
-func (e *originator) setState(state string) {
+func (e *Originator) setState(state string) {
 	e.state = state
 }
 
-func (e *originator) getState() string {
+func (e *Originator) getState() string {
 	return e.state
 }

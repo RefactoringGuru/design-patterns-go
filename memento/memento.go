@@ -1,9 +1,9 @@
 package main
 
-type memento struct {
+type Memento struct {
 	state string
 }
 
-func (m *memento) getSavedState() string {
+func (m *Memento) getSavedState() string {
 	return m.state
 }
