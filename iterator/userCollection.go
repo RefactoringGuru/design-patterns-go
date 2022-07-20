@@ -1,11 +1,11 @@
 package main
 
-type userCollection struct {
-	users []*user
+type UserCollection struct {
+	users []*User
 }
 
-func (u *userCollection) createIterator() iterator {
-	return &userIterator{
+func (u *UserCollection) createIterator() Iterator {
+	return &UserIterator{
 		users: u.users,
 	}
 }

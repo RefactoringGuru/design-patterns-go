@@ -1,6 +1,6 @@
 package main
 
-type iterator interface {
+type Iterator interface {
 	hasNext() bool
-	getNext() *user
+	getNext() *User
 }

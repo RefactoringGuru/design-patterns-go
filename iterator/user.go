@@ -1,6 +1,6 @@
 package main
 
-type user struct {
+type User struct {
 	name string
 	age  int
 }
