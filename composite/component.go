@@ -1,5 +1,5 @@
 package main
 
-type component interface {
+type Component interface {
 	search(string)
 }

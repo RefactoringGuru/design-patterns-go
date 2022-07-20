@@ -2,14 +2,14 @@ package main
 
 import "fmt"
 
-type file struct {
+type File struct {
 	name string
 }
 
-func (f *file) search(keyword string) {
+func (f *File) search(keyword string) {
 	fmt.Printf("Searching for keyword %s in file %s\n", keyword, f.name)
 }
 
-func (f *file) getName() string {
+func (f *File) getName() string {
 	return f.name
 }
