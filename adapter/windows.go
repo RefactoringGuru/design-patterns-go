@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-type windows struct{}
+type Windows struct{}
 
-func (w *windows) insertIntoUSBPort() {
+func (w *Windows) insertIntoUSBPort() {
 	fmt.Println("USB connector is plugged into windows machine.")
 }

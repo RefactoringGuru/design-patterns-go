@@ -1,5 +1,5 @@
 package main
 
-type computer interface {
-	insertIntoLightningPort()
+type Computer interface {
+	InsertIntoLightningPort()
 }

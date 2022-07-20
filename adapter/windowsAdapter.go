@@ -2,11 +2,11 @@ package main
 
 import "fmt"
 
-type windowsAdapter struct {
-	windowMachine *windows
+type WindowsAdapter struct {
+	windowMachine *Windows
 }
 
-func (w *windowsAdapter) insertIntoLightningPort() {
-    fmt.Println("Adapter converts Lightning signal to USB.")
+func (w *WindowsAdapter) InsertIntoLightningPort() {
+	fmt.Println("Adapter converts Lightning signal to USB.")
 	w.windowMachine.insertIntoUSBPort()
 }
