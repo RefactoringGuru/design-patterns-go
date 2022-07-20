@@ -1,6 +1,6 @@
 package main
 
-type device interface {
+type Device interface {
 	on()
 	off()
 }

@@ -1,9 +1,9 @@
 package main
 
-type button struct {
-	command command
+type Button struct {
+	command Command
 }
 
-func (b *button) press() {
+func (b *Button) press() {
 	b.command.execute()
 }

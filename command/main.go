@@ -1,22 +1,22 @@
 package main
 
 func main() {
-	tv := &tv{}
+	tv := &Tv{}
 
-	onCommand := &onCommand{
+	onCommand := &OnCommand{
 		device: tv,
 	}
 
-	offCommand := &offCommand{
+	offCommand := &OffCommand{
 		device: tv,
 	}
 
-	onButton := &button{
+	onButton := &Button{
 		command: onCommand,
 	}
 	onButton.press()
 
-	offButton := &button{
+	offButton := &Button{
 		command: offCommand,
 	}
 	offButton.press()
