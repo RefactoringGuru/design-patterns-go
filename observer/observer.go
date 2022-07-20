@@ -1,6 +1,6 @@
 package main
 
-type observer interface {
+type Observer interface {
 	update(string)
 	getID() string
 }
