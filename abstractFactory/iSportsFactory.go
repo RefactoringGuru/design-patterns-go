@@ -2,18 +2,18 @@ package main
 
 import "fmt"
 
-type iSportsFactory interface {
-	makeShoe() iShoe
-	makeShirt() iShirt
+type ISportsFactory interface {
+	makeShoe() IShoe
+	makeShirt() IShirt
 }
 
-func getSportsFactory(brand string) (iSportsFactory, error) {
+func GetSportsFactory(brand string) (ISportsFactory, error) {
 	if brand == "adidas" {
-		return &adidas{}, nil
+		return &Adidas{}, nil
 	}
 
 	if brand == "nike" {
-		return &nike{}, nil
+		return &Nike{}, nil
 	}
 
 	return nil, fmt.Errorf("Wrong brand type passed")

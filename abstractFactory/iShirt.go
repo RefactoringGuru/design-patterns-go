@@ -1,29 +1,29 @@
 package main
 
-type iShirt interface {
+type IShirt interface {
 	setLogo(logo string)
 	setSize(size int)
 	getLogo() string
 	getSize() int
 }
 
-type shirt struct {
+type Shirt struct {
 	logo string
 	size int
 }
 
-func (s *shirt) setLogo(logo string) {
+func (s *Shirt) setLogo(logo string) {
 	s.logo = logo
 }
 
-func (s *shirt) getLogo() string {
+func (s *Shirt) getLogo() string {
 	return s.logo
 }
 
-func (s *shirt) setSize(size int) {
+func (s *Shirt) setSize(size int) {
 	s.size = size
 }
 
-func (s *shirt) getSize() int {
+func (s *Shirt) getSize() int {
 	return s.size
 }
