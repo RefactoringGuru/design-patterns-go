@@ -2,24 +2,24 @@ package main
 
 import "fmt"
 
-type freightTrain struct {
-	mediator mediator
+type FreightTrain struct {
+	mediator Mediator
 }
 
-func (g *freightTrain) arrive() {
+func (g *FreightTrain) arrive() {
 	if !g.mediator.canArrive(g) {
 		fmt.Println("FreightTrain: Arrival blocked, waiting")
 		return
 	}
-    fmt.Println("FreightTrain: Arrived")
+	fmt.Println("FreightTrain: Arrived")
 }
 
-func (g *freightTrain) depart() {
+func (g *FreightTrain) depart() {
 	fmt.Println("FreightTrain: Leaving")
 	g.mediator.notifyAboutDeparture()
 }
 
-func (g *freightTrain) permitArrival() {
+func (g *FreightTrain) permitArrival() {
 	fmt.Println("FreightTrain: Arrival permitted")
 	g.arrive()
 }

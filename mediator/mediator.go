@@ -1,6 +1,6 @@
 package main
 
-type mediator interface {
-	canArrive(train) bool
+type Mediator interface {
+	canArrive(Train) bool
 	notifyAboutDeparture()
 }

@@ -1,6 +1,6 @@
 package main
 
-type train interface {
+type Train interface {
 	arrive()
 	depart()
 	permitArrival()
