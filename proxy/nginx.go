@@ -6,7 +6,7 @@ type Nginx struct {
 	rateLimiter       map[string]int
 }
 
-func newNginxServer() *Nginx {
+func newNginxServer() Server {
 	return &Nginx{
 		application:       &Application{},
 		maxAllowedRequest: 2,

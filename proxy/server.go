@@ -1,5 +1,5 @@
 package main
 
-type server interface {
+type Server interface {
 	handleRequest(string, string) (int, string)
 }
