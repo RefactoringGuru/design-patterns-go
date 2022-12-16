@@ -55,6 +55,6 @@ func (w *WalletFacade) deductMoneyFromWallet(accountID string, securityCode int,
 		return err
 	}
 	w.notification.sendWalletDebitNotification()
-	w.ledger.makeEntry(accountID, "credit", amount)
+	w.ledger.makeEntry(accountID, "debit", amount)
 	return nil
 }
