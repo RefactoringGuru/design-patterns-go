@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	pizza := &VeggeMania{}
+	pizza := &VeggieMania{}
 
 	//Add cheese topping
 	pizzaWithCheese := &CheeseTopping{
