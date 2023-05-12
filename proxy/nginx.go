@@ -1,7 +1,7 @@
 package main
 
 type Nginx struct {
-	application       *Application
+	application       server
 	maxAllowedRequest int
 	rateLimiter       map[string]int
 }
