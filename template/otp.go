@@ -7,20 +7,6 @@ type IOtp interface {
 	sendNotification(string) error
 }
 
-// type otp struct {
-// }
-
-// func (o *otp) genAndSendOTP(iOtp iOtp, otpLength int) error {
-// 	otp := iOtp.genRandomOTP(otpLength)
-// 	iOtp.saveOTPCache(otp)
-// 	message := iOtp.getMessage(otp)
-// 	err := iOtp.sendNotification(message)
-// 	if err != nil {
-// 		return err
-// 	}
-// 	return nil
-// }
-
 type Otp struct {
 	iOtp IOtp
 }
