@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type Doctor struct {
-	next Department
+	DepartmentBase
 }
 
 func (d *Doctor) execute(p *Patient) {
@@ -12,7 +12,7 @@ func (d *Doctor) execute(p *Patient) {
 		d.next.execute(p)
 		return
 	}
-	fmt.Println("Doctor checking patient")
+	fmt.Println("Doctor checking patient:", p.name)
 	p.doctorCheckUpDone = true
 	d.next.execute(p)
 }
