@@ -23,7 +23,7 @@ func (i *Item) register(o Observer) {
 }
 
 func (i *Item) deregister(o Observer) {
-	i.observerList = removeFromslice(i.observerList, o)
+	i.observerList = removeFromSlice(i.observerList, o)
 }
 
 func (i *Item) notifyAll() {
@@ -32,13 +32,20 @@ func (i *Item) notifyAll() {
 	}
 }
 
-func removeFromslice(observerList []Observer, observerToRemove Observer) []Observer {
-	observerListLength := len(observerList)
+func removeFromSlice(observerList []Observer, observerToRemove Observer) []Observer {
+	idx := findIndex(observerList, observerToRemove)
+	if idx == -1 {
+		return observerList
+	}
+	observerList = append(observerList[:idx], observerList[idx+1:]...)
+	return observerList
+}
+
+func findIndex(observerList []Observer, observerToRemove Observer) int {
 	for i, observer := range observerList {
-		if observerToRemove.getID() == observer.getID() {
-			observerList[observerListLength-1], observerList[i] = observerList[i], observerList[observerListLength-1]
-			return observerList[:observerListLength-1]
+		if observer.getID() == observerToRemove.getID() {
+			return i
 		}
 	}
-	return observerList
+	return -1
 }
