@@ -1,0 +1,26 @@
+go 1.19
+
+use (
+	./abstractFactory
+	./adapter
+	./bridge
+	./builder
+	./chainOfResponsibility
+	./command
+	./composite
+	./decorator
+	./facade
+	./factory
+	./flyweight
+	./iterator
+	./mediator
+	./memento
+	./observer
+	./prototype
+	./proxy
+	./singleton
+	./state
+	./strategy
+	./template
+	./visitor
+)
