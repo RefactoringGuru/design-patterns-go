@@ -9,5 +9,5 @@ func getGun(gunType string) (IGun, error) {
 	if gunType == "musket" {
 		return newMusket(), nil
 	}
-	return nil, fmt.Errorf("Wrong gun type passed")
+	return nil, fmt.Errorf("wrong gun type passed")
 }
